@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk - ITA Garage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .login-bg {
+            background-image: url('https://images.unsplash.com/photo-1558980394-0a06c4631733?auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-4" href="index.html">
+                <i class="fas fa-motorcycle me-2"></i>ITA Garage
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html#features">Keunggulan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="catalog.html">Katalog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Business Pedia
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="business-plan.html">Business Plan</a></li>
+                            <li><a class="dropdown-item" href="seminar-umkm.html">Seminar UMKM Berkelanjutan</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="tugas-7.html">Tugas Pertemuan 7</a></li>
+                            <li><a class="dropdown-item" href="tugas-11.html">Tugas Pertemuan 11</a></li>
+                            <li><a class="dropdown-item" href="tugas-13.html">Tugas Pertemuan 13</a></li>
+                            <li><a class="dropdown-item" href="tugas-14.html">Tugas Pertemuan 14</a></li>
+                            <li><a class="dropdown-item" href="tugas-15.html">Tugas Pertemuan 15</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="container-fluid p-0">
+        <div class="row g-0 min-vh-100">
+            <!-- Left Side Background -->
+            <div class="col-lg-6 d-none d-lg-block login-bg position-relative">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-dark"></div>
+                <div class="position-absolute top-50 start-50 translate-middle text-center w-75 text-white">
+                    <h1 class="display-4 fw-bold mb-4">Mulai Perjalanan Anda</h1>
+                    <p class="lead">Masuk untuk mengelola pesanan Anda, mendapatkan penawaran eksklusif, dan menyewa kendaraan impian dengan cepat.</p>
+                </div>
+            </div>
+
+            <!-- Right Side Login Form -->
+            <div class="col-lg-6 d-flex align-items-center justify-content-center p-4 p-md-5 bg-white">
+                <div class="w-100" style="max-width: 450px;">
+                    <div class="text-center mb-5">
+                        <div class="d-inline-block bg-primary-subtle p-3 rounded-circle text-primary mb-3">
+                            <i class="fas fa-user fa-2x"></i>
+                        </div>
+                        <h2 class="fw-bold">Selamat Datang Kembali</h2>
+                        <p class="text-muted">Silakan masukkan detail akun Anda</p>
+                    </div>
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-semibold">Email</label>
+                            <input type="email" class="form-control form-control-lg rounded-pill px-4" id="email" placeholder="nama@email.com" required>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <label for="password" class="form-label fw-semibold">Kata Sandi</label>
+                                <a href="#" class="text-decoration-none small text-primary fw-semibold">Lupa Kata Sandi?</a>
+                            </div>
+                            <input type="password" class="form-control form-control-lg rounded-pill px-4" id="password" placeholder="Masukkan kata sandi" required>
+                        </div>
+                        
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label small" for="rememberMe">Ingat saya</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill mb-4 shadow-sm fw-bold">Masuk</button>
+
+                        <div class="position-relative mb-4 text-center">
+                            <hr class="text-muted">
+                            <span class="position-absolute top-50 start-50 translate-middle px-3 bg-white text-muted small">Atau masuk dengan</span>
+                        </div>
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-dark w-100 rounded-pill"><i class="fab fa-google me-2"></i> Google</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-dark w-100 rounded-pill"><i class="fab fa-facebook-f me-2 text-primary"></i> Facebook</button>
+                            </div>
+                        </div>
+
+                        <p class="text-center text-muted mb-0">
+                            Belum punya akun? <a href="#" class="text-primary text-decoration-none fw-bold">Daftar Sekarang</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">ITA Garage</h5>
+                    <p>Platform penyewaan kendaraan terpercaya dengan armada berkualitas dan layanan profesional untuk setiap perjalanan Anda.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">Tautan</h5>
+                    <p><a href="index.html" class="text-white text-decoration-none">Beranda</a></p>
+                    <p><a href="catalog.html" class="text-white text-decoration-none">Katalog</a></p>
+                    <p><a href="index.html#features" class="text-white text-decoration-none">Keunggulan</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">Kontak</h5>
+                    <p><i class="fas fa-home me-3"></i> Jakarta, Indonesia</p>
+                    <p><i class="fas fa-envelope me-3"></i> info@itagarage.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +62 812 3456 7890</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-start">© 2026 Hak Cipta Dilindungi:
+                        <a href="#" class="text-decoration-none"><strong class="text-primary">ITA Garage</strong></a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-end">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

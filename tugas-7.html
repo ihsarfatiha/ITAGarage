@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pertemuan 7 - ITA Garage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-4" href="index.html">
+                <i class="fas fa-motorcycle me-2"></i>ITA Garage
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html#features">Keunggulan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="catalog.html">Katalog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active fw-semibold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Business Pedia
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="business-plan.html">Business Plan</a></li>
+                            <li><a class="dropdown-item" href="seminar-umkm.html">Seminar UMKM Berkelanjutan</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item fw-bold text-primary" href="tugas-7.html">Tugas Pertemuan 7</a></li>
+                            <li><a class="dropdown-item" href="tugas-11.html">Tugas Pertemuan 11</a></li>
+                            <li><a class="dropdown-item" href="tugas-13.html">Tugas Pertemuan 13</a></li>
+                            <li><a class="dropdown-item" href="tugas-14.html">Tugas Pertemuan 14</a></li>
+                            <li><a class="dropdown-item" href="tugas-15.html">Tugas Pertemuan 15</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-primary px-4 rounded-pill shadow-sm" href="login.html">Masuk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="bg-dark text-white py-5 position-relative" style="background: linear-gradient(135deg, #10b981, #047857);">
+        <div class="container py-5 text-center position-relative z-1">
+            <span class="badge bg-light text-success mb-3 px-3 py-2 rounded-pill"><i class="fas fa-bullseye me-2"></i>Tugas Pertemuan 7</span>
+            <h1 class="display-4 fw-bold mb-3">Bauran Pemasaran (Marketing Mix) 7P</h1>
+            <p class="lead text-white-50 mx-auto" style="max-width: 800px;">
+                Strategi pemasaran terpadu untuk platform digital penyewaan kendaraan ITAGarage.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row g-5">
+                
+                <!-- Sidebar Nav for Document -->
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="sticky-top" style="top: 100px;">
+                        <div class="card border-0 shadow-sm rounded-4 p-4">
+                            <h5 class="fw-bold mb-4 border-bottom pb-2">Daftar Isi</h5>
+                            <ul class="nav flex-column gap-2">
+                                <li class="nav-item"><a href="#section-intro" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>Pendahuluan</a></li>
+                                <li class="nav-item"><a href="#section-1" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>1. Product</a></li>
+                                <li class="nav-item"><a href="#section-2" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>2. Price</a></li>
+                                <li class="nav-item"><a href="#section-3" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>3. Place</a></li>
+                                <li class="nav-item"><a href="#section-4" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>4. Promotion</a></li>
+                                <li class="nav-item"><a href="#section-5" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>5. People</a></li>
+                                <li class="nav-item"><a href="#section-6" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>6. Process</a></li>
+                                <li class="nav-item"><a href="#section-7" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>7. Physical Evidence</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Content -->
+                <div class="col-lg-9">
+                    
+                    <!-- Intro -->
+                    <div id="section-intro" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <p class="text-muted fs-6 lh-lg mb-4">
+                            Merancang bauran pemasaran (Marketing Mix) 7P untuk platform digital seperti ITAGarage membutuhkan pendekatan yang sedikit berbeda dari bisnis rental konvensional. Karena ITAGarage adalah sebuah platform teknologi (website), strategi ini harus menjembatani produk digital (website) dengan layanan fisik (penyewaan kendaraan).
+                        </p>
+                        
+                        <h5 class="fw-bold mb-3 border-bottom pb-2">Karakteristik Segmen Pasar Utama:</h5>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="bg-success-subtle p-3 rounded-3 h-100 border border-success">
+                                    <h6 class="fw-bold text-success"><i class="fas fa-graduation-cap me-2"></i>Mahasiswa & Anak Muda</h6>
+                                    <p class="small text-dark mb-0">Mencari sewa motor atau mobil murah untuk akhir pekan/liburan. Sangat <em>tech-savvy</em> dan sensitif terhadap harga.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bg-success-subtle p-3 rounded-3 h-100 border border-success">
+                                    <h6 class="fw-bold text-success"><i class="fas fa-map-marked-alt me-2"></i>Wisatawan (Domestik)</h6>
+                                    <p class="small text-dark mb-0">Membutuhkan kendaraan (mobil keluarga/motor matic) dengan proses booking praktis sebelum tiba di lokasi.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bg-success-subtle p-3 rounded-3 h-100 border border-success">
+                                    <h6 class="fw-bold text-success"><i class="fas fa-briefcase me-2"></i>Profesional / Perusahaan</h6>
+                                    <p class="small text-dark mb-0">Membutuhkan mobil representatif untuk perjalanan dinas operasional dengan kebutuhan faktur/invoice jelas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1. Product -->
+                    <div id="section-1" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-primary text-white section-icon">
+                                <i class="fas fa-box-open"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">1. Product (Produk)</h3>
+                        </div>
+                        <p class="text-muted mb-4">Fokus pada ITAGarage bukanlah kendaraannya, melainkan <strong>platform dan pengalamannya</strong>.</p>
+                        
+                        <h6 class="fw-bold mb-2">Inti Produk:</h6>
+                        <p class="text-muted mb-4">Website penyewaan kendaraan yang responsif, cepat, dan anti-lelet dengan antarmuka (UI/UX) yang intuitif.</p>
+                        
+                        <h6 class="fw-bold mb-3">Fitur Spesifik:</h6>
+                        <ul class="list-group list-group-flush mb-0">
+                            <li class="list-group-item bg-transparent px-0 border-light"><i class="fas fa-check-circle text-primary me-2"></i><strong>Sistem autentikasi aman</strong> untuk login dan verifikasi data pengguna (mencegah penipuan).</li>
+                            <li class="list-group-item bg-transparent px-0 border-light"><i class="fas fa-check-circle text-primary me-2"></i><strong>Integrasi database real-time</strong> sehingga ketersediaan selalu up-to-date (tidak ada double-booking).</li>
+                            <li class="list-group-item bg-transparent px-0 border-light"><i class="fas fa-check-circle text-primary me-2"></i><strong>Dashboard admin komprehensif</strong> bagi mitra untuk mengatur armada.</li>
+                            <li class="list-group-item bg-transparent px-0 border-light border-bottom-0"><i class="fas fa-check-circle text-primary me-2"></i><strong>Sistem Review bintang 5</strong> untuk membangun kepercayaan.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 2. Price -->
+                    <div id="section-2" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-info text-white section-icon">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">2. Price (Harga)</h3>
+                        </div>
+                        <p class="text-muted mb-4">Bermain di model harga yang dinamis dan transparan, disesuaikan dengan segmen.</p>
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded-3 h-100 border-start border-4 border-info">
+                                    <h6 class="fw-bold"><i class="fas fa-user-graduate me-2 text-info"></i>Mahasiswa</h6>
+                                    <p class="text-muted small mb-0">Tarif khusus atau diskon sewa harian/mingguan dengan menyertakan kartu tanda mahasiswa.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded-3 h-100 border-start border-4 border-info">
+                                    <h6 class="fw-bold"><i class="fas fa-plane-departure me-2 text-info"></i>Wisatawan</h6>
+                                    <p class="text-muted small mb-0">Harga paket akhir pekan atau bundle sewa lebih dari 3 hari dengan harga kompetitif.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h6 class="fw-bold mb-2">Transparansi Harga:</h6>
+                        <p class="text-muted mb-4">Menampilkan harga final di halaman checkout web tanpa biaya tersembunyi. Skema deposit keamanan dikelola dengan sistem penahanan dana (hold amount) otomatis.</p>
+                        
+                        <h6 class="fw-bold mb-2">Sumber Pendapatan Platform:</h6>
+                        <p class="text-muted mb-0">Komisi flat atau persentase tertentu (misal 10%) dari mitra untuk setiap transaksi berhasil lewat website.</p>
+                    </div>
+
+                    <!-- 3. Place -->
+                    <div id="section-3" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-warning text-dark section-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">3. Place (Tempat/Distribusi)</h3>
+                        </div>
+                        <p class="text-muted mb-4">"Tempat" untuk ITAGarage adalah ranah digital dan ekosistem online.</p>
+
+                        <ul class="text-muted mb-0 lh-lg">
+                            <li><strong>Aksesibilitas Digital:</strong> Website harus dioptimalkan untuk akses mobile (Mobile-First Design). Sebagian besar target pasar akan membuka melalui smartphone.</li>
+                            <li><strong>Distribusi Layanan Fisik:</strong> Bekerja sama dengan mitra rental yang lokasinya strategis (dekat kampus, stasiun, bandara). Fitur Map di website membantu pengguna mencari kendaraan terdekat.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 4. Promotion -->
+                    <div id="section-4" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-danger text-white section-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">4. Promotion (Promosi)</h3>
+                        </div>
+                        <p class="text-muted mb-4">Menggunakan strategi pemasaran digital yang terukur.</p>
+
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="d-flex gap-3 bg-light p-3 rounded-3 border-start border-4 border-danger">
+                                    <div class="text-danger fs-4 mt-1"><i class="fab fa-google"></i></div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">SEO & Content Marketing</h6>
+                                        <p class="text-muted small mb-0">Mengoptimalkan mesin pencari untuk kata kunci spesifik ("Sewa mobil tanpa supir terdekat", dll).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex gap-3 bg-light p-3 rounded-3 border-start border-4 border-danger">
+                                    <div class="text-danger fs-4 mt-1"><i class="fab fa-instagram"></i></div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Social Media & Kampus</h6>
+                                        <p class="text-muted small mb-0">Memanfaatkan Instagram dan TikTok. Mengadakan kampanye di universitas sebagai sponsor acara himpunan dengan promosi kode diskon.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex gap-3 bg-light p-3 rounded-3 border-start border-4 border-danger">
+                                    <div class="text-danger fs-4 mt-1"><i class="fas fa-users"></i></div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Program Referral</h6>
+                                        <p class="text-muted small mb-0">Memberikan saldo e-wallet/potongan harga jika pengguna berhasil mengajak teman mendaftar & menyewa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. People -->
+                    <div id="section-5" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-secondary text-white section-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">5. People (Orang/SDM)</h3>
+                        </div>
+                        <p class="text-muted mb-4">Keberhasilan platform bergantung pada pihak-pihak yang terlibat di dalamnya.</p>
+
+                        <ul class="list-group list-group-flush mb-0">
+                            <li class="list-group-item bg-transparent px-0 border-light"><strong class="text-dark">Tim Teknis (Developer):</strong> Memastikan server berjalan baik, menjaga keamanan database, dan memelihara framework bebas bug.</li>
+                            <li class="list-group-item bg-transparent px-0 border-light"><strong class="text-dark">Customer Support:</strong> Responsif melalui live chat/WhatsApp menangani kendala transaksi atau darurat.</li>
+                            <li class="list-group-item bg-transparent px-0 border-bottom-0"><strong class="text-dark">Kualitas Mitra:</strong> Kurasi ketat mitra pemilik kendaraan untuk pelayanan ramah dan armada terawat.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 6. Process -->
+                    <div id="section-6" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-success text-white section-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">6. Process (Proses)</h3>
+                        </div>
+                        <p class="text-muted mb-4">Proses penyewaan harus dibuat semulus mungkin dari awal hingga akhir (User Journey).</p>
+
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 35px; height: 35px; min-width: 35px;">1</div>
+                                <div><strong class="text-dark">Pencarian & Booking:</strong> Pengguna mencari -> memilih tanggal -> melihat detail.</div>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 35px; height: 35px; min-width: 35px;">2</div>
+                                <div><strong class="text-dark">Verifikasi Seamless:</strong> Unggah KTP/SIM mudah dengan validasi cepat.</div>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 35px; height: 35px; min-width: 35px;">3</div>
+                                <div><strong class="text-dark">Pembayaran:</strong> Otomatis melalui Payment Gateway terintegrasi.</div>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 35px; height: 35px; min-width: 35px;">4</div>
+                                <div><strong class="text-dark">Serah Terima:</strong> Panduan titik temu jelas via notifikasi web/email.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Physical Evidence -->
+                    <div id="section-7" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-dark text-white section-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">7. Physical Evidence (Bukti Fisik)</h3>
+                        </div>
+                        <p class="text-muted mb-4">Meski berupa layanan digital, bukti fisik sangat penting untuk legitimasi.</p>
+
+                        <div class="row g-4">
+                            <div class="col-md-4 text-center">
+                                <div class="p-3 bg-light rounded-3 h-100">
+                                    <i class="fas fa-laptop-code fa-2x text-primary mb-3"></i>
+                                    <h6 class="fw-bold">Desain Web Profesional</h6>
+                                    <p class="small text-muted mb-0">Tampilan modern & navigasi bersih berkesan kredibel.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="p-3 bg-light rounded-3 h-100">
+                                    <i class="fas fa-file-invoice fa-2x text-danger mb-3"></i>
+                                    <h6 class="fw-bold">Dokumen Digital</h6>
+                                    <p class="small text-muted mb-0">E-voucher, invoice PDF, dan S&K hukum yang rapi.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="p-3 bg-light rounded-3 h-100">
+                                    <i class="fas fa-car-side fa-2x text-success mb-3"></i>
+                                    <h6 class="fw-bold">Standar Kendaraan</h6>
+                                    <p class="small text-muted mb-0">Stiker branding kecil pada kendaraan mitra tersertifikasi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">ITA Garage</h5>
+                    <p>Platform penyewaan kendaraan terpercaya dengan armada berkualitas dan layanan profesional untuk setiap perjalanan Anda.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">Tautan</h5>
+                    <p><a href="index.html" class="text-white text-decoration-none">Beranda</a></p>
+                    <p><a href="catalog.html" class="text-white text-decoration-none">Katalog</a></p>
+                    <p><a href="index.html#features" class="text-white text-decoration-none">Keunggulan</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">Kontak</h5>
+                    <p><i class="fas fa-home me-3"></i> Jakarta, Indonesia</p>
+                    <p><i class="fas fa-envelope me-3"></i> info@itagarage.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +62 812 3456 7890</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-start">© 2026 Hak Cipta Dilindungi:
+                        <a href="#" class="text-decoration-none"><strong class="text-primary">ITA Garage</strong></a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-end">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

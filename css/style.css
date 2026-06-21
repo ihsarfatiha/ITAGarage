@@ -1,0 +1,37 @@
+.text-gradient {
+    background: linear-gradient(45deg, #0d6efd, #0dcaf0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+    transform: translateY(-5px);
+}
+.badge-custom {
+    padding: 8px 16px;
+    border-radius: 50px;
+}
+.badge-available {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+.badge-rented {
+    background-color: #f8d7da;
+    color: #842029;
+}
+.bg-gradient-dark {
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+.text-blue { color: #fff; }
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}

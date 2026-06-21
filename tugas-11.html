@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pertemuan 11 - ITA Garage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-4" href="index.html">
+                <i class="fas fa-motorcycle me-2"></i>ITA Garage
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html#features">Keunggulan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="catalog.html">Katalog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active fw-semibold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Business Pedia
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="business-plan.html">Business Plan</a></li>
+                            <li><a class="dropdown-item" href="seminar-umkm.html">Seminar UMKM Berkelanjutan</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="tugas-7.html">Tugas Pertemuan 7</a></li>
+                            <li><a class="dropdown-item fw-bold text-primary" href="tugas-11.html">Tugas Pertemuan 11</a></li>
+                            <li><a class="dropdown-item" href="tugas-13.html">Tugas Pertemuan 13</a></li>
+                            <li><a class="dropdown-item" href="tugas-14.html">Tugas Pertemuan 14</a></li>
+                            <li><a class="dropdown-item" href="tugas-15.html">Tugas Pertemuan 15</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-primary px-4 rounded-pill shadow-sm" href="login.html">Masuk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="bg-dark text-white py-5 position-relative" style="background: linear-gradient(135deg, #4f46e5, #312e81);">
+        <div class="container py-5 text-center position-relative z-1">
+            <span class="badge bg-light text-primary mb-3 px-3 py-2 rounded-pill"><i class="fas fa-book me-2"></i>Tugas Pertemuan 11</span>
+            <h1 class="display-4 fw-bold mb-3">Analisis Keuangan Usaha ITAGarage</h1>
+            <p class="lead text-white-50 mx-auto" style="max-width: 800px;">
+                Asumsi finansial dan proyeksi pendapatan platform penyewaan kendaraan.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row g-5">
+                
+                <!-- Sidebar Nav for Document -->
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="sticky-top" style="top: 100px;">
+                        <div class="card border-0 shadow-sm rounded-4 p-4">
+                            <h5 class="fw-bold mb-4 border-bottom pb-2">Daftar Isi</h5>
+                            <ul class="nav flex-column gap-2">
+                                <li class="nav-item"><a href="#section-intro" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-primary me-2 fs-6"></i>Pendahuluan</a></li>
+                                <li class="nav-item"><a href="#section-1" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-primary me-2 fs-6"></i>1. Asumsi Dasar</a></li>
+                                <li class="nav-item"><a href="#section-2" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-primary me-2 fs-6"></i>2. Biaya Investasi Awal</a></li>
+                                <li class="nav-item"><a href="#section-3" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-primary me-2 fs-6"></i>3. Biaya Operasional</a></li>
+                                <li class="nav-item"><a href="#section-4" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-primary me-2 fs-6"></i>4. Proyeksi Pendapatan</a></li>
+                                <li class="nav-item"><a href="#section-5" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-primary me-2 fs-6"></i>5. Laba Rugi (P&L)</a></li>
+                                <li class="nav-item"><a href="#section-6" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-primary me-2 fs-6"></i>6. Titik Impas (BEP)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Content -->
+                <div class="col-lg-9">
+                    
+                    <!-- Intro -->
+                    <div id="section-intro" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <p class="text-muted fs-6 lh-lg mb-0">
+                            Karena ITAGarage menggunakan model bisnis <em>marketplace/aggregator</em> (sebagai perantara), analisis keuangannya akan sangat berbeda dengan bisnis rental konvensional. Anda tidak perlu mengeluarkan modal besar untuk membeli armada kendaraan. Fokus pengeluaran utama adalah pada <strong>infrastruktur teknologi</strong> (server, pemeliharaan sistem) dan <strong>biaya akuisisi pelanggan</strong> (marketing).
+                            <br><br>
+                            Berikut adalah simulasi analisis keuangan sederhana untuk ITAGarage di tahun pertama operasional:
+                        </p>
+                    </div>
+
+                    <!-- Section 1 -->
+                    <div id="section-1" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-primary text-white section-icon">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">1. Asumsi Dasar (Key Assumptions)</h3>
+                        </div>
+                        <h5 class="fw-bold mb-2">Model Pendapatan:</h5>
+                        <p class="text-muted mb-4">Komisi <strong>10%</strong> dari setiap transaksi yang berhasil.</p>
+                        
+                        <h5 class="fw-bold mb-2 text-primary">Rata-rata Nilai Transaksi (Ticket Size):</h5>
+                        <ul class="text-muted mb-4 lh-lg">
+                            <li><strong>Motor:</strong> Rp 100.000 / hari</li>
+                            <li><strong>Mobil:</strong> Rp 350.000 / hari</li>
+                        </ul>
+                        
+                        <h5 class="fw-bold mb-2 text-success">Target Awal:</h5>
+                        <p class="text-muted mb-0">Di bulan pertama, target moderat adalah memfasilitasi <strong>100 transaksi</strong> (70 motor, 30 mobil).</p>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div id="section-2" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-info text-white section-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">2. Biaya Investasi Awal (CapEx)</h3>
+                        </div>
+                        <p class="text-muted mb-4">Biaya ini dikeluarkan satu kali di awal untuk membangun pondasi bisnis dan legalitas.</p>
+                        
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item bg-transparent d-flex justify-content-between align-items-start border-bottom py-3 px-0">
+                                <div>
+                                    <div class="fw-bold text-dark">Legalitas Perusahaan</div>
+                                    <small class="text-muted">PT Perorangan / CV</small>
+                                </div>
+                                <span class="badge bg-light text-dark border">Rp 1.500.000 - Rp 3.000.000</span>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between align-items-start border-bottom py-3 px-0">
+                                <div>
+                                    <div class="fw-bold text-dark">Domain & SSL</div>
+                                    <small class="text-muted">Pendaftaran .id / .com</small>
+                                </div>
+                                <span class="badge bg-light text-dark border">Rp 300.000 / tahun</span>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between align-items-start border-bottom py-3 px-0">
+                                <div>
+                                    <div class="fw-bold text-dark">Pengembangan Awal (Bootstrap)</div>
+                                    <small class="text-muted">Aset UI/UX, plugin premium, atau lisensi</small>
+                                </div>
+                                <span class="badge bg-light text-dark border">Rp 1.000.000</span>
+                            </li>
+                        </ul>
+                        <div class="alert alert-info border-0 border-start border-4 border-info d-flex align-items-center mb-0">
+                            <i class="fas fa-calculator fa-2x me-3"></i>
+                            <div>
+                                <h6 class="fw-bold mb-0">Total Estimasi CapEx</h6>
+                                <span class="fs-5 fw-bold text-info">± Rp 4.300.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <div id="section-3" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-warning text-dark section-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">3. Biaya Operasional Bulanan (OpEx)</h3>
+                        </div>
+                        <p class="text-muted mb-4">Pengeluaran rutin untuk menjaga agar platform tetap hidup dan mendapatkan pelanggan.</p>
+                        
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded-3 h-100 border-start border-4 border-warning">
+                                    <h6 class="fw-bold"><i class="fas fa-cloud me-2 text-warning"></i>Infrastruktur Server & Cloud</h6>
+                                    <p class="text-muted small mb-2">Sewa VPS (Virtual Private Server) spesifikasi menengah ke bawah (seperti DigitalOcean/AWS).</p>
+                                    <span class="badge bg-white text-dark border">Rp 300.000 - Rp 500.000</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded-3 h-100 border-start border-4 border-warning">
+                                    <h6 class="fw-bold"><i class="fas fa-bullhorn me-2 text-warning"></i>Pemasaran & Iklan (Ads)</h6>
+                                    <p class="text-muted small mb-2">Fokus pada Instagram/TikTok Ads dan promo diskon pengguna baru.</p>
+                                    <span class="badge bg-white text-dark border">Rp 2.000.000</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded-3 h-100 border-start border-4 border-warning">
+                                    <h6 class="fw-bold"><i class="fas fa-wifi me-2 text-warning"></i>Komunikasi & Internet</h6>
+                                    <p class="text-muted small mb-2">Kebutuhan operasional harian.</p>
+                                    <span class="badge bg-white text-dark border">Rp 300.000</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded-3 h-100 border-start border-4 border-warning">
+                                    <h6 class="fw-bold"><i class="fas fa-plug me-2 text-warning"></i>Layanan API Pihak Ketiga</h6>
+                                    <p class="text-muted small mb-0">Payment Gateway (potong per transaksi), Google Maps API (gratis hingga kuota tertentu).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning border-0 border-start border-4 border-warning d-flex align-items-center mb-0">
+                            <i class="fas fa-calculator fa-2x me-3"></i>
+                            <div>
+                                <h6 class="fw-bold mb-0">Total Estimasi OpEx Bulanan</h6>
+                                <span class="fs-5 fw-bold text-dark">± Rp 2.800.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 4 -->
+                    <div id="section-4" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-success text-white section-icon">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">4. Proyeksi Pendapatan (Revenue)</h3>
+                        </div>
+                        <p class="text-muted mb-4">Simulasi Bulan Pertama:</p>
+
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="p-4 bg-success-subtle rounded-4 h-100 border border-success">
+                                    <h5 class="fw-bold text-success mb-3"><i class="fas fa-motorcycle me-2"></i>Transaksi Motor</h5>
+                                    <ul class="list-unstyled mb-0 text-dark">
+                                        <li class="mb-2"><strong>Volume:</strong> 70 transaksi</li>
+                                        <li class="mb-2"><strong>GMV:</strong> Rp 7.000.000</li>
+                                        <li class="pt-2 border-top border-success mt-2">
+                                            <strong class="text-success">Komisi (10%): Rp 700.000</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-4 bg-success-subtle rounded-4 h-100 border border-success">
+                                    <h5 class="fw-bold text-success mb-3"><i class="fas fa-car me-2"></i>Transaksi Mobil</h5>
+                                    <ul class="list-unstyled mb-0 text-dark">
+                                        <li class="mb-2"><strong>Volume:</strong> 30 transaksi</li>
+                                        <li class="mb-2"><strong>GMV:</strong> Rp 10.500.000</li>
+                                        <li class="pt-2 border-top border-success mt-2">
+                                            <strong class="text-success">Komisi (10%): Rp 1.050.000</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-success border-0 border-start border-4 border-success text-center mb-0 py-4">
+                            <h5 class="fw-bold mb-1">Total Pendapatan Bulan 1</h5>
+                            <h2 class="fw-bold text-success mb-0">Rp 1.750.000</h2>
+                        </div>
+                    </div>
+
+                    <!-- Section 5 -->
+                    <div id="section-5" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-danger text-white section-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">5. Analisis Keuntungan & Laba Rugi (P&L)</h3>
+                        </div>
+                        <p class="text-muted mb-4">Berdasarkan simulasi bulan pertama:</p>
+
+                        <table class="table table-bordered mb-4">
+                            <tbody>
+                                <tr>
+                                    <td class="text-muted">Total Pendapatan</td>
+                                    <td class="text-end fw-bold text-success">Rp 1.750.000</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted">Total OpEx</td>
+                                    <td class="text-end fw-bold text-danger">(Rp 2.800.000)</td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td class="fw-bold">Net Profit/Loss (Burn Rate)</td>
+                                    <td class="text-end fw-bold text-danger">- Rp 1.050.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="bg-danger-subtle p-3 rounded-3 border-start border-4 border-danger">
+                            <h6 class="fw-bold text-danger"><i class="fas fa-exclamation-triangle me-2"></i>Catatan Strategis:</h6>
+                            <p class="text-dark small mb-0">Mengalami kerugian (negatif) di bulan-bulan awal adalah hal yang <strong>sangat wajar</strong> bagi bisnis startup platform. Fase awal fokus pada <em>user acquisition</em> (mencari pengguna) dan mengedukasi pasar.</p>
+                        </div>
+                    </div>
+
+                    <!-- Section 6 -->
+                    <div id="section-6" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-secondary text-white section-icon">
+                                <i class="fas fa-chart-area"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">6. Analisis Titik Impas (Break-Even Point)</h3>
+                        </div>
+                        
+                        <p class="text-muted lh-lg mb-4">
+                            Untuk menutup biaya operasional bulanan (Rp 2.800.000), ITAGarage harus menghasilkan pendapatan komisi sebesar jumlah tersebut.
+                        </p>
+
+                        <div class="bg-light p-4 rounded-4 text-center mb-4 border border-2 border-dashed border-secondary">
+                            <p class="mb-2 text-muted">Jika rata-rata komisi gabungan mobil dan motor adalah Rp 20.000 per transaksi, maka target BEP:</p>
+                            <h4 class="fw-bold text-dark mb-0">Rp 2.800.000 / Rp 20.000 = <span class="text-primary">140 transaksi/bulan</span></h4>
+                            <p class="small text-muted mt-2 mb-0">(Sekitar 4-5 transaksi per hari)</p>
+                        </div>
+
+                        <p class="text-muted lh-lg mb-4">
+                            Jika target pertumbuhan (growth rate) transaksi dinaikkan 30% setiap bulannya secara konsisten berkat strategi pemasaran, ITAGarage diproyeksikan akan menyentuh titik impas operasional (BEP Operasional) pada <strong>Bulan ke-3 atau ke-4</strong>.
+                        </p>
+
+                        <h5 class="fw-bold mb-3 mt-5 border-bottom pb-2">Metrik Keuangan Penting untuk Dipantau:</h5>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="bg-white p-3 rounded-3 h-100 border shadow-sm">
+                                    <h6 class="fw-bold text-primary">CAC (Customer Acquisition Cost)</h6>
+                                    <p class="text-muted small mb-0">Berapa biaya iklan yang dihabiskan untuk mendapatkan satu penyewa baru. Jika CAC > keuntungan komisi, strategi promosi harus dievaluasi.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bg-white p-3 rounded-3 h-100 border shadow-sm">
+                                    <h6 class="fw-bold text-primary">GMV (Gross Merchandise Value)</h6>
+                                    <p class="text-muted small mb-0">Total perputaran uang di dalam platform. Angka ini penting jika ke depannya ITAGarage ingin mencari pendanaan dari investor.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bg-white p-3 rounded-3 h-100 border shadow-sm">
+                                    <h6 class="fw-bold text-primary">Retention Rate</h6>
+                                    <p class="text-muted small mb-0">Berapa persentase penyewa yang kembali menyewa di bulan berikutnya tanpa harus melihat iklan lagi (menjadi pelanggan setia).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">ITA Garage</h5>
+                    <p>Platform penyewaan kendaraan terpercaya dengan armada berkualitas dan layanan profesional untuk setiap perjalanan Anda.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">Tautan</h5>
+                    <p><a href="index.html" class="text-white text-decoration-none">Beranda</a></p>
+                    <p><a href="catalog.html" class="text-white text-decoration-none">Katalog</a></p>
+                    <p><a href="index.html#features" class="text-white text-decoration-none">Keunggulan</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">Kontak</h5>
+                    <p><i class="fas fa-home me-3"></i> Jakarta, Indonesia</p>
+                    <p><i class="fas fa-envelope me-3"></i> info@itagarage.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +62 812 3456 7890</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-start">© 2026 Hak Cipta Dilindungi:
+                        <a href="#" class="text-decoration-none"><strong class="text-primary">ITA Garage</strong></a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-end">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

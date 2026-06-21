@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pertemuan 13 - ITA Garage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-4" href="index.html">
+                <i class="fas fa-motorcycle me-2"></i>ITA Garage
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html#features">Keunggulan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="catalog.html">Katalog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active fw-semibold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Business Pedia
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="business-plan.html">Business Plan</a></li>
+                            <li><a class="dropdown-item" href="seminar-umkm.html">Seminar UMKM Berkelanjutan</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="tugas-7.html">Tugas Pertemuan 7</a></li>
+                            <li><a class="dropdown-item" href="tugas-11.html">Tugas Pertemuan 11</a></li>
+                            <li><a class="dropdown-item fw-bold text-primary" href="tugas-13.html">Tugas Pertemuan 13</a></li>
+                            <li><a class="dropdown-item" href="#">Tugas Pertemuan 14</a></li>
+                            <li><a class="dropdown-item" href="tugas-15.html">Tugas Pertemuan 15</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-primary px-4 rounded-pill shadow-sm" href="login.html">Masuk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="bg-dark text-white py-5 position-relative" style="background: linear-gradient(135deg, #059669, #064e3b);">
+        <div class="container py-5 text-center position-relative z-1">
+            <span class="badge bg-light text-success mb-3 px-3 py-2 rounded-pill"><i class="fas fa-leaf me-2"></i>Tugas Pertemuan 13</span>
+            <h1 class="display-4 fw-bold mb-3">Kewirausahaan Sosial & Bisnis Berkelanjutan</h1>
+            <p class="lead text-white-50 mx-auto" style="max-width: 800px;">
+                Menerapkan konsep Triple Bottom Line (3P) pada model bisnis ITAGarage.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row g-5">
+                
+                <!-- Sidebar Nav for Document -->
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="sticky-top" style="top: 100px;">
+                        <div class="card border-0 shadow-sm rounded-4 p-4">
+                            <h5 class="fw-bold mb-4 border-bottom pb-2">Daftar Isi</h5>
+                            <ul class="nav flex-column gap-2">
+                                <li class="nav-item"><a href="#section-intro" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>Pendahuluan</a></li>
+                                <li class="nav-item"><a href="#section-1" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>1. People (Dampak Sosial)</a></li>
+                                <li class="nav-item"><a href="#section-2" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>2. Planet (Lingkungan)</a></li>
+                                <li class="nav-item"><a href="#section-3" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>3. Profit (Ekonomi)</a></li>
+                                <li class="nav-item"><a href="#section-4" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>Bukti Fisik & Branding</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Content -->
+                <div class="col-lg-9">
+                    
+                    <!-- Intro -->
+                    <div id="section-intro" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-success text-white section-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">Pendekatan Berkelanjutan (Sustainable Approach)</h3>
+                        </div>
+                        <p class="text-muted fs-6 lh-lg mb-4">
+                            Memasukkan konsep <strong>Kewirausahaan Sosial (Social Entrepreneurship)</strong> dan <strong>Bisnis Berkelanjutan (Sustainable Business)</strong> tidak hanya akan memberikan dampak positif bagi masyarakat dan lingkungan, tetapi juga menjadi nilai jual yang sangat kuat (brand positioning) bagi ITAGarage di mata konsumen modern, terutama generasi milenial dan Gen Z yang sangat peduli pada isu-isu sosial.
+                        </p>
+                        
+                        <div class="bg-success-subtle p-4 rounded-4 border-start border-4 border-success">
+                            <h5 class="fw-bold text-success mb-3">Konsep Utama: Triple Bottom Line (3P)</h5>
+                            <ul class="list-unstyled mb-0 text-dark">
+                                <li class="mb-2"><i class="fas fa-users text-success me-2"></i><strong>People:</strong> Masyarakat / Dampak Sosial</li>
+                                <li class="mb-2"><i class="fas fa-leaf text-success me-2"></i><strong>Planet:</strong> Lingkungan / Bisnis Hijau</li>
+                                <li><i class="fas fa-chart-line text-success me-2"></i><strong>Profit:</strong> Keuntungan / Keberlanjutan Ekonomi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 1. People -->
+                    <div id="section-1" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-primary text-white section-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">1. Dampak Sosial (People)</h3>
+                        </div>
+                        <p class="text-muted mb-4">Sebagai platform aggregator, ITAGarage memiliki posisi strategis untuk menciptakan lapangan kerja dan pemerataan ekonomi.</p>
+                        
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="bg-light p-4 rounded-4 h-100 border border-light shadow-sm">
+                                    <h6 class="fw-bold text-primary mb-3"><i class="fas fa-user-plus me-2"></i>Pemberdayaan Pemilik Kendaraan Skala Mikro</h6>
+                                    <p class="text-muted small mb-0">Alih-alih hanya bekerja sama dengan perusahaan rental besar, ITAGarage dapat membuat kampanye khusus untuk mengajak individu (karyawan WFH, mahasiswa) menyewakan kendaraan mereka yang nganggur untuk menciptakan pendapatan pasif.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-4 rounded-4 h-100 border border-light shadow-sm">
+                                    <h6 class="fw-bold text-primary mb-3"><i class="fas fa-tools me-2"></i>Kemitraan Bengkel & Tempat Cuci Lokal</h6>
+                                    <p class="text-muted small mb-0">Menggandeng bengkel kecil skala UMKM sebagai "Mitra Perawatan Resmi". Pemilik kendaraan di ITAGarage mendapatkan diskon di tempat tersebut, sehingga menghidupkan ekosistem bisnis lokal.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="bg-light p-4 rounded-4 border border-light shadow-sm">
+                                    <h6 class="fw-bold text-primary mb-3"><i class="fas fa-ambulance me-2"></i>Akses Transportasi untuk Kebutuhan Sosial</h6>
+                                    <p class="text-muted small mb-0">Memberikan tarif khusus, subsidi, atau bahkan gratis untuk peminjaman kendaraan yang digunakan untuk kegiatan relawan, distribusi bantuan bencana, atau acara amal.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Planet -->
+                    <div id="section-2" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-success text-white section-icon">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">2. Keberlanjutan Lingkungan (Planet)</h3>
+                        </div>
+                        <p class="text-muted mb-4">Industri transportasi sangat lekat dengan isu emisi karbon. ITAGarage dapat mengambil peran aktif untuk mengurangi dampak lingkungan ini.</p>
+
+                        <div class="row g-4">
+                            <div class="col-md-12">
+                                <div class="d-flex gap-4 p-4 bg-success-subtle rounded-4 border border-success">
+                                    <div class="text-success fs-1 mt-2"><i class="fas fa-charging-station"></i></div>
+                                    <div>
+                                        <h5 class="fw-bold text-success mb-2">Mendorong Transisi Kendaraan Listrik (EV)</h5>
+                                        <p class="text-dark small mb-0">Membuat kategori khusus di website untuk "Sewa Motor/Mobil Listrik" (misal: Wuling AirEV, motor listrik Volta/Gesits). Berikan insentif berupa potongan komisi bagi mitra, atau diskon khusus bagi penyewa yang memilih kendaraan ramah lingkungan tersebut.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-4 rounded-4 h-100 border border-light shadow-sm">
+                                    <h6 class="fw-bold text-success mb-3"><i class="fas fa-hand-holding-heart me-2"></i>Fitur Carbon Offset (Tebus Karbon)</h6>
+                                    <p class="text-muted small mb-0">Tambahkan fitur opsional di halaman checkout di mana penyewa bisa menambahkan donasi kecil (Rp 2.000 - Rp 5.000). Dana ini disalurkan 100% ke LSM lingkungan untuk program penanaman pohon.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-4 rounded-4 h-100 border border-light shadow-sm">
+                                    <h6 class="fw-bold text-success mb-3"><i class="fas fa-leaf me-2"></i>Edukasi Eco-Driving</h6>
+                                    <p class="text-muted small mb-0">Memberikan tips berkendara yang hemat bahan bakar dan ramah lingkungan kepada pengguna melalui blog website, media sosial, atau email newsletter paska-pemesanan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Profit -->
+                    <div id="section-3" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-warning text-dark section-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">3. Keberlanjutan Ekonomi (Profit)</h3>
+                        </div>
+                        <p class="text-muted mb-4">Bisnis tidak akan bisa membantu orang lain jika secara finansial tidak sehat. Keuntungan tetap dicari, namun dengan cara yang <strong>etis</strong>.</p>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="bg-light p-4 rounded-4 h-100 border-start border-4 border-warning">
+                                    <h6 class="fw-bold text-dark mb-2"><i class="fas fa-balance-scale me-2 text-warning"></i>Sistem Bagi Hasil yang Adil (Fair Trade)</h6>
+                                    <p class="text-muted small mb-0">Menjaga potongan komisi platform tetap masuk akal dan transparan. Tidak ada biaya tersembunyi yang merugikan mitra pemilik kendaraan.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-4 rounded-4 h-100 border-start border-4 border-warning">
+                                    <h6 class="fw-bold text-dark mb-2"><i class="fas fa-piggy-bank me-2 text-warning"></i>Dana Cadangan Komunitas</h6>
+                                    <p class="text-muted small mb-0">Menyisihkan persentase kecil dari keuntungan tahunan ITAGarage (1-2%) ke dalam dompet komunitas untuk asuransi kesehatan mikro mitra atau bantuan darurat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bukti Fisik -->
+                    <div id="section-4" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-dark text-white section-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">Bukti Fisik (Physical Evidence) untuk Branding</h3>
+                        </div>
+                        <p class="text-muted mb-4">Jika strategi di atas diterapkan, ITAGarage bisa memunculkan badge atau sertifikasi di website seperti:</p>
+
+                        <div class="d-flex flex-wrap gap-3 mb-4">
+                            <div class="bg-primary text-white p-3 rounded-pill shadow-sm d-flex align-items-center gap-2">
+                                <i class="fas fa-check-circle fs-5"></i>
+                                <span class="fw-semibold">Platform Pemberdaya UMKM Lokal</span>
+                            </div>
+                            <div class="bg-success text-white p-3 rounded-pill shadow-sm d-flex align-items-center gap-2">
+                                <i class="fas fa-tree fs-5"></i>
+                                <span class="fw-semibold">1,250 Pohon Berhasil Ditanam</span>
+                            </div>
+                            <div class="bg-info text-white p-3 rounded-pill shadow-sm d-flex align-items-center gap-2">
+                                <i class="fas fa-bolt fs-5"></i>
+                                <span class="fw-semibold">15% Armada Kendaraan Listrik</span>
+                            </div>
+                        </div>
+                        
+                        <p class="text-dark fw-semibold lh-lg mb-0">
+                            Hal ini akan sangat meningkatkan kepercayaan dan loyalitas pengguna terhadap merek ITAGarage.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">ITA Garage</h5>
+                    <p>Platform penyewaan kendaraan terpercaya dengan armada berkualitas dan layanan profesional untuk setiap perjalanan Anda.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">Tautan</h5>
+                    <p><a href="index.html" class="text-white text-decoration-none">Beranda</a></p>
+                    <p><a href="catalog.html" class="text-white text-decoration-none">Katalog</a></p>
+                    <p><a href="index.html#features" class="text-white text-decoration-none">Keunggulan</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">Kontak</h5>
+                    <p><i class="fas fa-home me-3"></i> Jakarta, Indonesia</p>
+                    <p><i class="fas fa-envelope me-3"></i> info@itagarage.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +62 812 3456 7890</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-start">© 2026 Hak Cipta Dilindungi:
+                        <a href="#" class="text-decoration-none"><strong class="text-primary">ITA Garage</strong></a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-end">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pertemuan 15 - ITA Garage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 24px;
+        }
+        .tech-card {
+            transition: all 0.3s ease;
+        }
+        .tech-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-4" href="index.html">
+                <i class="fas fa-motorcycle me-2"></i>ITA Garage
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html#features">Keunggulan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="catalog.html">Katalog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active fw-semibold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Business Pedia
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="business-plan.html">Business Plan</a></li>
+                            <li><a class="dropdown-item" href="seminar-umkm.html">Seminar UMKM Berkelanjutan</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="tugas-7.html">Tugas Pertemuan 7</a></li>
+                            <li><a class="dropdown-item" href="tugas-11.html">Tugas Pertemuan 11</a></li>
+                            <li><a class="dropdown-item" href="tugas-13.html">Tugas Pertemuan 13</a></li>
+                            <li><a class="dropdown-item" href="tugas-14.html">Tugas Pertemuan 14</a></li>
+                            <li><a class="dropdown-item fw-bold text-primary" href="tugas-15.html">Tugas Pertemuan 15</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-primary px-4 rounded-pill shadow-sm" href="login.html">Masuk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="bg-dark text-white py-5 position-relative" style="background: linear-gradient(135deg, #0d9488, #0f766e);">
+        <div class="container py-5 text-center position-relative z-1">
+            <span class="badge bg-light text-teal mb-3 px-3 py-2 rounded-pill"><i class="fas fa-rocket me-2"></i>Tugas Pertemuan 15</span>
+            <h1 class="display-4 fw-bold mb-3">Strategi Scale-Up & Teknologi Masa Depan</h1>
+            <p class="lead text-white-50 mx-auto" style="max-width: 800px;">
+                Peta jalan (roadmap) strategi pertumbuhan dan adaptasi teknologi tingkat lanjut (Advanced Tech) untuk ITAGarage.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row g-5">
+                
+                <!-- Sidebar Nav for Document -->
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="sticky-top" style="top: 100px;">
+                        <div class="card border-0 shadow-sm rounded-4 p-4">
+                            <h5 class="fw-bold mb-4 border-bottom pb-2">Daftar Isi</h5>
+                            <ul class="nav flex-column gap-2">
+                                <li class="nav-item"><a href="#section-intro" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-teal me-2 fs-6"></i>Pendahuluan</a></li>
+                                <li class="nav-item"><a href="#section-1" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-teal me-2 fs-6"></i>1. Big Data & Scale-Up</a></li>
+                                <li class="nav-item"><a href="#section-2" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-teal me-2 fs-6"></i>2. Artificial Intelligence (AI)</a></li>
+                                <li class="nav-item"><a href="#section-3" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-teal me-2 fs-6"></i>3. Antisipasi Tren Global</a></li>
+                                <li class="nav-item"><a href="#section-4" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-teal me-2 fs-6"></i>4. Ekspansi Ekosistem</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Content -->
+                <div class="col-lg-9">
+                    
+                    <!-- Intro -->
+                    <div id="section-intro" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-primary text-white section-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">Evolusi Menjadi Raksasa Startup</h3>
+                        </div>
+                        <p class="text-muted fs-6 lh-lg mb-0">
+                            Merancang strategi <em>scale-up</em> (skalabilitas) dan mengantisipasi teknologi masa depan adalah langkah krusial agar ITAGarage tidak hanya bertahan sebagai bisnis lokal, tetapi bisa berevolusi menjadi raksasa <em>startup</em> mobilitas. Fondasi teknologi web (seperti Laravel) yang dibangun di awal harus dirancang agar siap diintegrasikan dengan teknologi tingkat lanjut (Advanced Tech).
+                        </p>
+                    </div>
+
+                    <!-- 1. Big Data -->
+                    <div id="section-1" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-info text-white section-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">1. Strategi Scale-Up & Pengolahan Big Data</h3>
+                        </div>
+                        <p class="text-muted mb-4">Ketika transaksi harian melonjak dari puluhan menjadi ribuan, volume data (log pencarian, GPS, riwayat) akan menjadi sangat masif.</p>
+                        
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="bg-light p-4 rounded-4 h-100 border border-light tech-card shadow-sm">
+                                    <h6 class="fw-bold text-info mb-3"><i class="fas fa-project-diagram me-2"></i>Implementasi Big Data</h6>
+                                    <p class="text-muted small mb-0">Untuk mengelola data berskala besar tanpa membebani database utama, mengadopsi teknologi pemrosesan terdistribusi seperti <strong>Apache Spark</strong> atau <strong>PySpark</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-4 rounded-4 h-100 border border-light tech-card shadow-sm">
+                                    <h6 class="fw-bold text-info mb-3"><i class="fas fa-tags me-2"></i>Dynamic Pricing</h6>
+                                    <p class="text-muted small mb-0">Memproses <em>streaming data</em> secara <em>real-time</em> untuk otomatis menaikkan/menurunkan harga berdasarkan <em>supply & demand</em>, cuaca, atau musim liburan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Artificial Intelligence -->
+                    <div id="section-2" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-primary text-white section-icon" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9) !important;">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">2. Adaptasi Artificial Intelligence (AI)</h3>
+                        </div>
+                        <p class="text-muted mb-4">Mengurangi proses manual dan meningkatkan efisiensi melalui kecerdasan buatan.</p>
+
+                        <div class="d-flex flex-column gap-4">
+                            <div class="d-flex gap-4 p-4 bg-white border rounded-4 tech-card shadow-sm">
+                                <div class="text-primary fs-1" style="color: #8b5cf6 !important;"><i class="fas fa-eye"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-2">Computer Vision untuk Inspeksi Kendaraan</h6>
+                                    <p class="small text-muted mb-0">Mengotomatiskan QA fisik. Menggunakan teknik Computer Vision (OpenCV) dikombinasikan dengan CNN untuk otomatis mendeteksi goresan, penyok, atau anomali pada foto kendaraan dari pengguna, meminimalisir perdebatan klaim asuransi.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-4 p-4 bg-white border rounded-4 tech-card shadow-sm">
+                                <div class="text-primary fs-1" style="color: #8b5cf6 !important;"><i class="fas fa-comment-dots"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-2">NLP untuk Analisis Sentimen Ulasan</h6>
+                                    <p class="small text-muted mb-0">Menerapkan model NLP (arsitektur Transformer seperti BERT, IndoBERT) untuk mengklasifikasikan ribuan ulasan menjadi keluhan mesin, pelayanan mitra, atau opini biasa secara otomatis.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-4 p-4 bg-white border rounded-4 tech-card shadow-sm">
+                                <div class="text-primary fs-1" style="color: #8b5cf6 !important;"><i class="fas fa-brain"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-2">Prediksi Permintaan dengan Model Recurrent</h6>
+                                    <p class="small text-muted mb-0">Memanfaatkan data historis dengan arsitektur LSTM (Long Short-Term Memory) untuk memprediksi lonjakan permintaan berhari-hari sebelumnya di berbagai kota.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Global Megatrends -->
+                    <div id="section-3" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-success text-white section-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">3. Antisipasi Tren Global</h3>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="p-3 bg-success-subtle rounded-3 border-start border-4 border-success h-100">
+                                    <h6 class="fw-bold text-success"><i class="fas fa-charging-station me-2"></i>Transisi Kendaraan Listrik (EV)</h6>
+                                    <p class="small text-dark mb-0">Bersiap menjadi pionir platform penyewaan EV terintegrasi, mencakup penambahan fitur mapping stasiun pengisian daya (SPKLU) langsung di dalam sistem.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 bg-secondary bg-opacity-10 rounded-3 border-start border-4 border-secondary h-100">
+                                    <h6 class="fw-bold text-secondary"><i class="fas fa-shield-alt me-2"></i>Etika & Integritas Data</h6>
+                                    <p class="small text-dark mb-0">Menerapkan standar enkripsi tertinggi untuk melindungi data pribadi (KTP, wajah, kartu kredit) sesuai undang-undang (PDP/GDPR) sebagai bentuk kepatuhan hukum yang mutlak.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Expansion -->
+                    <div id="section-4" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-dark text-white section-icon">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">4. Ekspansi Ekosistem</h3>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="bg-light p-4 rounded-4 border border-light d-flex flex-column flex-md-row gap-3 align-items-md-center">
+                                    <div class="text-dark fs-2"><i class="fas fa-arrows-alt-h"></i></div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Horizontal Scaling</h6>
+                                        <p class="small text-muted mb-0">Membuka layanan di negara tetangga (seperti penyewaan motor di Thailand atau Bali untuk turis asing) dengan sistem konversi mata uang terintegrasi yang akurat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="bg-light p-4 rounded-4 border border-light d-flex flex-column flex-md-row gap-3 align-items-md-center">
+                                    <div class="text-dark fs-2"><i class="fas fa-arrows-alt-v"></i></div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Vertical Scaling (SaaS B2B)</h6>
+                                        <p class="small text-muted mb-0">Menyediakan layanan B2B: menyewakan sistem manajemen armada (<em>fleet management dashboard</em>) berbasis Filament kepada perusahaan rental besar untuk mengelola inventaris internal mereka.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">ITA Garage</h5>
+                    <p>Platform penyewaan kendaraan terpercaya dengan armada berkualitas dan layanan profesional untuk setiap perjalanan Anda.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">Tautan</h5>
+                    <p><a href="index.html" class="text-white text-decoration-none">Beranda</a></p>
+                    <p><a href="catalog.html" class="text-white text-decoration-none">Katalog</a></p>
+                    <p><a href="index.html#features" class="text-white text-decoration-none">Keunggulan</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">Kontak</h5>
+                    <p><i class="fas fa-home me-3"></i> Jakarta, Indonesia</p>
+                    <p><i class="fas fa-envelope me-3"></i> info@itagarage.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +62 812 3456 7890</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-start">© 2026 Hak Cipta Dilindungi:
+                        <a href="#" class="text-decoration-none"><strong class="text-primary">ITA Garage</strong></a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-end">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

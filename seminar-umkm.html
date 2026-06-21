@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar UMKM Berkelanjutan - ITA Garage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-4" href="index.html">
+                <i class="fas fa-motorcycle me-2"></i>ITA Garage
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html#features">Keunggulan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="catalog.html">Katalog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active fw-semibold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Business Pedia
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="business-plan.html">Business Plan</a></li>
+                            <li><a class="dropdown-item fw-bold text-primary" href="seminar-umkm.html">Seminar UMKM Berkelanjutan</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="tugas-7.html">Tugas Pertemuan 7</a></li>
+                            <li><a class="dropdown-item" href="tugas-11.html">Tugas Pertemuan 11</a></li>
+                            <li><a class="dropdown-item" href="tugas-13.html">Tugas Pertemuan 13</a></li>
+                            <li><a class="dropdown-item" href="tugas-14.html">Tugas Pertemuan 14</a></li>
+                            <li><a class="dropdown-item" href="tugas-15.html">Tugas Pertemuan 15</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-primary px-4 rounded-pill shadow-sm" href="login.html">Masuk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="bg-dark text-white py-5 position-relative" style="background: linear-gradient(135deg, #198754, #0d4a2e);">
+        <div class="container py-5 text-center position-relative z-1">
+            <span class="badge bg-light text-success mb-3 px-3 py-2 rounded-pill"><i class="fas fa-leaf me-2"></i>Seminar & Pengetahuan</span>
+            <h1 class="display-4 fw-bold mb-3">Masa Depan UMKM dalam Ekonomi Berkelanjutan</h1>
+            <p class="lead text-white-50 mx-auto" style="max-width: 800px;">
+                Materi Presentasi Seminar Internasional Forum Fair Trade Indonesia
+            </p>
+        </div>
+        <!-- Decorative bg -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 opacity-25" style="background-image: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=2000&q=80'); background-size: cover; background-position: center; mix-blend-mode: overlay;"></div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row g-5">
+                
+                <!-- Sidebar Nav for Document -->
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="sticky-top" style="top: 100px;">
+                        <div class="card border-0 shadow-sm rounded-4 p-4">
+                            <h5 class="fw-bold mb-4 border-bottom pb-2">Daftar Isi</h5>
+                            <ul class="nav flex-column gap-2">
+                                <li class="nav-item"><a href="#section-1" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>1. Informasi Umum</a></li>
+                                <li class="nav-item"><a href="#section-2" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>2. Pengenalan ESG</a></li>
+                                <li class="nav-item"><a href="#section-3" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>3. Adopsi & Tantangan</a></li>
+                                <li class="nav-item"><a href="#section-4" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>4. Fair Trade</a></li>
+                                <li class="nav-item"><a href="#section-5" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>5. Dampak ESG</a></li>
+                                <li class="nav-item"><a href="#section-6" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>6. Riset Masa Depan</a></li>
+                                <li class="nav-item"><a href="#section-7" class="nav-link px-0 text-dark fw-semibold"><i class="fas fa-chevron-right text-success me-2 fs-6"></i>7. Bukti Kehadiran</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Content -->
+                <div class="col-lg-9">
+                    
+                    <!-- Section 1 -->
+                    <div id="section-1" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-success text-white section-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">Informasi Umum</h3>
+                        </div>
+                        <ul class="text-muted fs-6 lh-lg mb-0">
+                            <li><strong>Judul:</strong> Masa Depan UMKM dalam Ekonomi Berkelanjutan</li>
+                            <li><strong>Penyusun:</strong> Arief Bowo Prayoga Kasmo, Ph.D. (Akademisi dan Peneliti dari Universitas Mercu Buana)</li>
+                            <li><strong>Acara:</strong> Seminar Internasional Forum Fair Trade Indonesia</li>
+                            <li><strong>Tanggal:</strong> 3 Juni 2026</li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div id="section-2" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-info text-white section-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">Pergeseran Paradigma dan Pengenalan ESG</h3>
+                        </div>
+                        <p class="text-muted lh-lg mb-4">
+                            Dunia bisnis saat ini sedang mengalami pergeseran paradigma dari yang awalnya hanya berorientasi pada profit menuju model bisnis yang lebih bertanggung jawab. Kerangka <strong>Environmental, Social, and Governance (ESG)</strong> kini telah menjadi standar bahasa universal dan evaluasi global bagi investor serta regulator.
+                        </p>
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-4">
+                                <div class="bg-light p-4 rounded-4 h-100 border-start border-4 border-success">
+                                    <h5 class="fw-bold text-success mb-3"><i class="fas fa-tree me-2"></i>Environmental</h5>
+                                    <p class="text-muted mb-0 small">Mengevaluasi pengelolaan emisi karbon, penggunaan air, efisiensi energi, dan pengelolaan limbah.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bg-light p-4 rounded-4 h-100 border-start border-4 border-info">
+                                    <h5 class="fw-bold text-info mb-3"><i class="fas fa-users me-2"></i>Social</h5>
+                                    <p class="text-muted mb-0 small">Menyoroti cara perusahaan memperlakukan pekerja, hak asasi, kesejahteraan, serta dampaknya terhadap konsumen dan komunitas.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bg-light p-4 rounded-4 h-100 border-start border-4 border-primary">
+                                    <h5 class="fw-bold text-primary mb-3"><i class="fas fa-gavel me-2"></i>Governance</h5>
+                                    <p class="text-muted mb-0 small">Menuntut agar perusahaan memiliki sistem yang transparan, akuntabel, serta bebas dari korupsi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <div id="section-3" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-warning text-dark section-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">Tingkat Adopsi dan Tantangan Implementasi UMKM</h3>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h5 class="fw-bold">Tingkat Adopsi:</h5>
+                            <ul class="text-muted lh-lg mb-0">
+                                <li>Terdapat <strong>84%</strong> UMKM di kawasan ASEAN yang telah mengadopsi minimal satu praktik ESG.</li>
+                                <li>Di Indonesia, <strong>48%</strong> UMKM mulai mengimplementasikan keberlanjutan pada tahun 2024 (meningkat dari tahun sebelumnya).</li>
+                                <li>Sebanyak <strong>55%</strong> UMKM meyakini bahwa penerapan ESG mampu menarik perhatian investor dan memperbaiki reputasi bisnis mereka.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h5 class="fw-bold text-danger">Tantangan Implementasi:</h5>
+                            <div class="d-flex flex-column gap-3 mt-3">
+                                <div class="d-flex gap-3">
+                                    <div class="text-danger"><i class="fas fa-exclamation-circle fa-xl"></i></div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Regulasi</h6>
+                                        <p class="text-muted mb-0 small">Tidak adanya aturan atau panduan bertahap yang secara spesifik mewajibkan pelaporan keberlanjutan bagi UMKM.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <div class="text-danger"><i class="fas fa-exclamation-circle fa-xl"></i></div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Finansial</h6>
+                                        <p class="text-muted mb-0 small">Tingginya biaya investasi awal untuk teknologi hijau, sementara UMKM umumnya lebih membutuhkan keuntungan jangka pendek.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <div class="text-danger"><i class="fas fa-exclamation-circle fa-xl"></i></div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Sumber Daya Manusia (SDM)</h6>
+                                        <p class="text-muted mb-0 small">Banyak UMKM belum sepenuhnya memahami kerangka ESG sehingga rentan terjebak dalam praktik <em>greenwashing</em> secara tidak sengaja.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <div class="text-danger"><i class="fas fa-exclamation-circle fa-xl"></i></div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Ekosistem Pasar</h6>
+                                        <p class="text-muted mb-0 small">UMKM domestik murni berisiko tertinggal karena minimnya paparan dan tekanan dari pasar global, berbeda dengan UMKM di area pariwisata seperti Bali.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 4 -->
+                    <div id="section-4" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-primary text-white section-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">Fair Trade dan Rantai Pasok Hijau</h3>
+                        </div>
+                        <p class="text-muted lh-lg mb-0">
+                            <strong>Fair Trade</strong> dipandang sebagai bentuk implementasi ESG yang sangat konkret karena mampu menjembatani nilai keberlanjutan dengan praktik perdagangan yang nyata. Penerapan <em>Green Supply Chain Management</em> terbukti secara signifikan dapat mengangkat kinerja keberlanjutan UMKM di negara berkembang. Transformasi keberlanjutan ini didorong oleh sinergi antara teknologi digital, inovasi hijau, dan proses berbagi pengetahuan.
+                        </p>
+                    </div>
+
+                    <!-- Section 5 -->
+                    <div id="section-5" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-secondary text-white section-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">Dampak ESG terhadap Kinerja UMKM</h3>
+                        </div>
+                        <p class="text-muted lh-lg mb-4">
+                            Berdasarkan tinjauan terhadap 15 studi empiris, dampak ESG terhadap kinerja bisnis UMKM ternyata memberikan hasil yang kontradiktif dan bergantung pada konteks:
+                        </p>
+                        
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-4">
+                                <div class="p-3 bg-success-subtle rounded-3 text-center h-100 border border-success">
+                                    <h2 class="fw-bold text-success mb-0">46,7%</h2>
+                                    <p class="text-muted small mt-2 mb-0">Menemukan bahwa penerapan ESG terbukti <strong>meningkatkan</strong> kinerja UMKM secara signifikan.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="p-3 bg-warning-subtle rounded-3 text-center h-100 border border-warning">
+                                    <h2 class="fw-bold text-warning mb-0">33,3%</h2>
+                                    <p class="text-muted small mt-2 mb-0">Menyimpulkan bahwa efek positif dari ESG hanya muncul pada <strong>kondisi/konteks tertentu</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="p-3 bg-danger-subtle rounded-3 text-center h-100 border border-danger">
+                                    <h2 class="fw-bold text-danger mb-0">20%</h2>
+                                    <p class="text-muted small mt-2 mb-0">Melaporkan bahwa ESG dapat <strong>merugikan</strong> karena mengalihkan fokus dari aktivitas inti.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-light p-3 rounded-3 border-start border-4 border-secondary">
+                            <p class="text-muted small mb-0"><strong>Catatan Penting:</strong> Pola utamanya menunjukkan bahwa studi dengan temuan positif umumnya berfokus pada UMKM skala menengah hingga besar, sementara temuan negatif lebih banyak terjadi pada UMKM skala mikro.</p>
+                        </div>
+                    </div>
+
+                    <!-- Section 6 -->
+                    <div id="section-6" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 hover-scale">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-dark text-white section-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">Agenda Riset Masa Depan</h3>
+                        </div>
+
+                        <ul class="text-muted lh-lg mb-0 list-group list-group-flush">
+                            <li class="list-group-item bg-transparent border-bottom px-0 py-3">
+                                <strong><i class="fas fa-seedling text-success me-2"></i>Kewirausahaan Hijau (Green Entrepreneurship):</strong> Perlu diteliti lebih lanjut untuk merancang model bisnis yang menyelaraskan keuntungan finansial dengan kelestarian planet.
+                            </li>
+                            <li class="list-group-item bg-transparent border-bottom px-0 py-3">
+                                <strong><i class="fas fa-link text-primary me-2"></i>Rantai Pasok Berkelanjutan (Sustainable Supply Chain):</strong> Harus dikembangkan agar proses produksi hingga distribusi dapat lebih adil, rendah karbon, dan mudah ditelusuri.
+                            </li>
+                            <li class="list-group-item bg-transparent border-bottom px-0 py-3 border-0">
+                                <strong><i class="fas fa-robot text-info me-2"></i>Pemanfaatan Digital ESG:</strong> Melalui platform kecerdasan buatan (AI) dan <em>big data</em> harus diperluas untuk membantu UMKM melakukan penilaian kinerja keberlanjutan secara otomatis.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 7 (Bukti Kehadiran) -->
+                    <div id="section-7" class="card border-0 shadow-sm rounded-4 p-4 p-md-5 hover-scale mt-5">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="bg-primary text-white section-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h3 class="fw-bold mb-0">Bukti Kehadiran Seminar</h3>
+                        </div>
+                        <p class="text-muted lh-lg mb-4">
+                            Berikut adalah dokumentasi bukti kehadiran saat mengikuti Seminar Internasional Forum Fair Trade Indonesia pada tanggal 3 Juni 2026.
+                        </p>
+                        <div class="text-center bg-light p-4 rounded-4 border border-2 border-dashed border-primary">
+                            <!-- User can change the src attribute below with their actual photo path -->
+                            <img src="buktiseminar.jpeg" alt="Bukti Kehadiran Seminar" class="img-fluid rounded-3 shadow-sm" style="max-width: 350px; height: auto; object-fit: cover;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-success">ITA Garage</h5>
+                    <p>Platform penyewaan kendaraan terpercaya dengan armada berkualitas dan layanan profesional untuk setiap perjalanan Anda.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-success">Tautan</h5>
+                    <p><a href="index.html" class="text-white text-decoration-none">Beranda</a></p>
+                    <p><a href="catalog.html" class="text-white text-decoration-none">Katalog</a></p>
+                    <p><a href="index.html#features" class="text-white text-decoration-none">Keunggulan</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-success">Kontak</h5>
+                    <p><i class="fas fa-home me-3"></i> Jakarta, Indonesia</p>
+                    <p><i class="fas fa-envelope me-3"></i> info@itagarage.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +62 812 3456 7890</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-start">© 2026 Hak Cipta Dilindungi:
+                        <a href="#" class="text-decoration-none"><strong class="text-success">ITA Garage</strong></a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-end">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
